@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bolt IoT WebRemote</title>
+        <meta charset="utf-8">
+        
+        <style rel="stylesheet">
+            body{
+
+    margin-top: 50px;
+    background: #0E101C;
+    font-size: 80px;
+}
+
+
+#L {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#L:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#L.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+
+#LU {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#LU:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#LU.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+
+#LD {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#LD:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#LD.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+
+
+#F {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5; 
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#F:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#F.on{
+    background-color: #00ADB5;
+    color: #5a5d61;    
+
+}
+
+#S {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#S:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#S.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+#B {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#B:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#B.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+
+#R {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#R:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#R.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+#RU {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#RU:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#RU.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+#RD {
+    height:  150px;
+    width: 300px;
+
+    background-color: #3f4245;
+    border: 3px solid #00ADB5;  
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+    line-height: 180%;
+    color: #00ADB5;
+    font-family:Itim,handwriting;
+
+}    
+#RD:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color:#505357;
+
+}
+
+#RD.on{
+    background-color: #00ADB5;
+    color: #5a5d61;
+}
+
+
+
+
+        </style> 
+
+
+      
+    </head>
+
+    <body>
+        <center>
+            <div id = "Control" style="display: flex;flex-direction: row;align-content: stretch;justify-content: space-around;align-items: center;">
+                <div id ="left">
+                    <div id="LU" onclick="LU()">↖</div>
+                    <br>
+                    <div id="L" onclick="L()">⬅</div>
+                    <br>
+                    <div id="LD" onclick="LD()">↙</div> 
+                </div>
+                <div id = "center">
+                    <div id="F" onclick="F()">⬆</div>
+                    <br>
+                    <div id="S" onclick="S()">🛑</div> 
+                    <br>
+                    <div id="B" onclick="B()">⬇</div> 
+                </div>  
+                <div id = "right">
+                    <div id="RU" onclick="RU()">↗</div>
+                    <br>
+                    <div id="R" onclick="R()">➡</div>
+                    <br>
+                    <div id="RD" onclick="RD()">↘</div> 
+                </div>    
+            </div>        
+        </center>
+        
+        <script type = "text/javascript">
+
+            const base_url = "https://cloud.boltiot.com/remote/";
+
+            const API = "XXXXX-XXXXX-XXXXXX-XXXXXX-XXXXX";
+            
+            function Execute(val){
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        //document.getElementById("javascript_response").innerHTML = "Javascript Response : "+xmlhttp.responseText;
+                        //alert(xmlhttp.responseText);
+                    }
+                };  
+                xmlhttp.open("GET", base_url + API + "/" + val);
+                xmlhttp.send();   
+            }
+
+
+
+            function F(){
+
+                var F = document.getElementById('F');
+
+                if (!F.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=HIGH,LOW,LOW,HIGH'); // executes Forward
+                    document.getElementById("F").classList.add("on");
+                    window.localStorage.setItem("F", "on");
+                    
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+
+            function S(){
+
+                var S = document.getElementById('S');
+
+                if (!S.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=LOW,LOW,LOW,LOW'); // executes Stop
+                    document.getElementById("S").classList.add("on");
+                    window.localStorage.setItem("S", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+            function B(){
+
+                var B = document.getElementById('B');
+
+                if (!B.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=LOW,HIGH,HIGH,LOW'); // executes Backward
+                    document.getElementById("B").classList.add("on");
+                    window.localStorage.setItem("B", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+            function R(){
+
+                var R = document.getElementById('R');
+
+                if (!R.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=LOW,HIGH,LOW,HIGH'); // executes RIGHT Forward
+                    document.getElementById("R").classList.add("on");
+                    window.localStorage.setItem("R", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+            function L(){
+
+                var L = document.getElementById('L');
+
+                if (!L.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=HIGH,LOW,HIGH,LOW'); // executes LEFT Forward
+                    document.getElementById("L").classList.add("on");
+                    window.localStorage.setItem("L", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+            function LU(){
+
+                var LU = document.getElementById('LU');
+
+                if (!LU.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=HIGH,LOW,LOW,LOW'); // executes LEFT Forward
+                    document.getElementById("LU").classList.add("on");
+                    window.localStorage.setItem("LU", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+            function RU(){
+
+                var RU = document.getElementById('RU');
+
+                if (!RU.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=LOW,LOW,LOW,HIGH'); // executes LEFT Forward
+                    document.getElementById("RU").classList.add("on");
+                    window.localStorage.setItem("RU", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+            function LD(){
+
+                var LD = document.getElementById('LD');
+
+                if (!LD.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=LOW,HIGH,LOW,LOW'); // executes LEFT Forward
+                    document.getElementById("LD").classList.add("on");
+                    window.localStorage.setItem("LD", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                    document.getElementById("RD").classList.remove("on");
+                    localStorage.removeItem("RD");
+                }
+            }
+
+            function RD(){
+
+                var RD = document.getElementById('RD');
+
+                if (!RD.classList.contains("on")){
+
+                    Execute('digitalMultiWrite?deviceName=BOLTXXXXX&pins=1,2,3,4&states=LOW,LOW,HIGH,LOW'); // executes LEFT Forward
+                    document.getElementById("RD").classList.add("on");
+                    window.localStorage.setItem("RD", "on");
+                    
+                    document.getElementById("F").classList.remove("on");
+                    localStorage.removeItem("F");
+                    document.getElementById("S").classList.remove("on");
+                    localStorage.removeItem("S");
+                    document.getElementById("B").classList.remove("on");
+                    localStorage.removeItem("B");
+                    document.getElementById("R").classList.remove("on");
+                    localStorage.removeItem("R");
+                    document.getElementById("L").classList.remove("on");
+                    localStorage.removeItem("L");
+                    document.getElementById("LU").classList.remove("on");
+                    localStorage.removeItem("LU");
+                    document.getElementById("LD").classList.remove("on");
+                    localStorage.removeItem("LD");
+                    document.getElementById("RU").classList.remove("on");
+                    localStorage.removeItem("RU");
+                }
+            }
+            
+            function ReadAll(){
+                if (window.localStorage.getItem('L') == 'on'){
+                    document.getElementById("L").classList.add("on"); 
+                }
+                if (window.localStorage.getItem('F') == 'on'){
+                    document.getElementById("F").classList.add("on"); 
+                }
+                if (window.localStorage.getItem('S') == 'on'){
+                    document.getElementById("S").classList.add("on"); 
+                }
+                if (window.localStorage.getItem('B') == 'on'){
+                    document.getElementById("B").classList.add("on"); 
+                }
+                if (window.localStorage.getItem('R') == 'on'){
+                    document.getElementById("R").classList.add("on"); 
+                }
+
+            }
+
+
+            ReadAll();
+
+            document.addEventListener('keydown', function(e) {
+                switch (e.keyCode) {
+                    case 37:
+                        console.log('left');
+                        L();
+                        break;
+
+                    case 36:
+                        console.log('left-up');
+                        LU();
+                        break;
+                    
+                    case 38:
+                        console.log('up');
+                        F();
+                        break;
+
+                    case 33:
+                        console.log('right-up');
+                        RU();
+                        break;
+
+                    case 39:
+                        console.log('right');
+                        R();
+                        break;
+
+                    case 34:
+                        console.log('right-down');
+                        RD();
+                        break;
+                    
+                    case 40:
+                        console.log('down');
+                        B();
+                        break;
+
+                    case 35:
+                        console.log('left-down');
+                        LD();
+                        break;
+
+                    case 32:
+                        console.log('Stop');
+                        S();
+                        break;
+                    case 12:
+                        console.log('Stop');
+                        S();
+                        break;
+                }
+            });
+
+        </script>
+            
+    </body>
+
+</html>
