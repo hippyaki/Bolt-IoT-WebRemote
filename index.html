@@ -3,6 +3,12 @@
     <head>
         <title>Bolt IoT WebRemote</title>
         <meta charset="utf-8">
+        <script type = "text/javascript">
+
+            const base_url = "https://cloud.boltiot.com/remote/";
+
+            const API = "XXXXX-XXXXX-XXXXXX-XXXXXX-XXXXX";
+        </script>
         
         <style rel="stylesheet">
             body{
@@ -299,11 +305,7 @@
         </center>
         
         <script type = "text/javascript">
-
-            const base_url = "https://cloud.boltiot.com/remote/";
-
-            const API = "XXXXX-XXXXX-XXXXXX-XXXXXX-XXXXX";
-            
+           
             function Execute(val){
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function() {
